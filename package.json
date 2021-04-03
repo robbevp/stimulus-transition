@@ -1,0 +1,27 @@
+{
+  "name": "stimulus-transition",
+  "version": "1.0.0",
+  "description": "Enter/Leave transitions for stimulusJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Robbe Van Petegem <robbe@vanpetegem.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint src -c .eslintrc.js --ext js,jsx,ts --fix"
+  },
+  "peerDependencies": {
+    "stimulus": "^2.0.0"
+  },
+  "devDependencies": {
+    "stimulus": "^2.0.0",
+    "typescript": "^4.2.3",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}

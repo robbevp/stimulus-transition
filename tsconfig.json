@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["dom", "es2015"],
+    "declaration": true, 
+    "outDir": "dist",
+    "rootDir": "src",
+
+    /* Strict Type-Checking Options */
+    "strict": true, 
+    "strictPropertyInitialization": false,          /* Stimulus initializes properties for us. */
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    
+    /* Module Resolution Options */
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
