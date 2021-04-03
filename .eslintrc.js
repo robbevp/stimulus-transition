@@ -20,6 +20,8 @@ module.exports = {
   },
   rules: {
     curly: ["warn", "multi", "consistent"],
+    "no-console": "warn",
+    "no-debugger": "warn",
   },
   ignorePatterns: ["dist", "node_modules"],
 };
