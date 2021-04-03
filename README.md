@@ -85,20 +85,19 @@ If you want to run the transition when the element, you should add the `data-tra
   <!-- content -->
 </div>
 ```
-### Manual triggers
+### Destroy after leave
 
-You can also manually trigger the transitions, by calling `enter`, `leave`, `destroy` inside `data-action`
+You can also destroy the element after running the leave transition by adding `data-transition-destroy-value`
+
 ```HTML
 <div data-controller="transition"
+     data-transition-destroy-value
      data-transition-enter-active="enter-class"
      data-transition-enter-from="enter-from-class"
      data-transition-enter-to="enter-to-class"
      data-transition-leave-active="or-use multiple classes"
      data-transition-leave-from="or-use multiple classes"
-     data-transition-leave-to="or-use multiple classes"
-     data-action="click->transition#enter">
-  <button data-action="transition#leave">Run leave transition and hide element</button>
-  <button data-action="transition#destroy">Run leave transition and remove element from DOM</button>
+     data-transition-leave-to="or-use multiple classes">
 </div>
 ```
 
@@ -107,7 +106,6 @@ You can also manually trigger the transitions, by calling `enter`, `leave`, `des
 If you want to run another action after the transition is completed, you can listen for the following events on the element.
 * `transition:end-enter`
 * `transition:end-leave`
-* `transition:end-destroy` (This actually runs right after `transition:end-leave` and right before destroying the element)
 
 This would look something like:
 ```HTML
