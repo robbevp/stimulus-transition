@@ -75,7 +75,7 @@ If you don't need one of the classes, you can omit the attributes. The following
 </div>
 ```
 ### Initial transition
-If you want to run the transition when the element, you should add the `data-transition-initial-value`-attribute to the element. The value you enter is not used.
+If you want to run the transition when the element in entered in the DOM, you should add the `data-transition-initial-value`-attribute to the element. The value you enter is not used.
 ```HTML
 <div data-controller="transition"
      data-transition-initial-value
@@ -127,4 +127,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/robbev
 This package is available as open source under the terms of the MIT License.
 
 ## Credits
-This implementation is inspired by [the following article from Sebastian De Deyne](https://sebastiandedeyne.com/javascript-framework-diet/enter-leave-transitions/) - it's an interesting read to understand what is happening in these transitions.
+This implementation of the transition is inspired by [the following article from Sebastian De Deyne](https://sebastiandedeyne.com/javascript-framework-diet/enter-leave-transitions/) - it's an interesting read to understand what is happening in these transitions.
