@@ -60,7 +60,7 @@ If you don't need one of the classes, you can omit the attributes. The following
 </div>
 ```
 ### Initial transition
-If you want to run the transition when the element, you should add the `data-transition-initial-value`-attribute to the element. It's value isn't used.
+If you want to run the transition when the element, you should add the `data-transition-initial-value`-attribute to the element. The value you enter is not used.
 ```HTML
 <div data-controller="transition"
      data-transition-initial-value
@@ -72,10 +72,9 @@ If you want to run the transition when the element, you should add the `data-tra
 ```
 ### Manual triggers
 
-You can also manually trigger the transitions, by calling `enter`, `leave`, `destroy`
-
-<div class="h-10 w-10"
-     data-controller="transition"
+You can also manually trigger the transitions, by calling `enter`, `leave`, `destroy` inside `data-action`
+```HTML
+<div data-controller="transition"
      data-transition-enter-active="enter-class"
      data-transition-enter-from="enter-from-class"
      data-transition-enter-to="enter-to-class"
@@ -86,6 +85,7 @@ You can also manually trigger the transitions, by calling `enter`, `leave`, `des
   <button data-action="transition#leave">Run leave transition and hide element</button>
   <button data-action="transition#destroy">Run leave transition and remove element from DOM</button>
 </div>
+```
 
 ## Contributing
 
