@@ -6,7 +6,6 @@ export default class extends Controller {
   observer: MutationObserver;
 
   initialize(): void {
-    console.log(this.element);
     this.observer = new MutationObserver(() => {
       this.observer.disconnect();
       this.triggerTransition.call(this);
