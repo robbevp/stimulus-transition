@@ -87,6 +87,24 @@ You can also manually trigger the transitions, by calling `enter`, `leave`, `des
 </div>
 ```
 
+### Listen for transitions
+
+If you want to run another action after the transition is completed, you can listen for the following events on the element.
+* `transition:end-enter`
+* `transition:end-leave`
+* `transition:end-destroy` (This actually runs right after `transition:end-leave` and right before destroying the element)
+
+This would look something like:
+```HTML
+<div data-controller="transition"
+     data-transition-enter-active="enter-class"
+     data-transition-enter-from="enter-from-class"
+     data-transition-enter-to="enter-to-class"
+     data-action="transition:end-enter->controller#action">
+  <!-- content -->
+</div>
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/robbevp/stimulus-transition. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
