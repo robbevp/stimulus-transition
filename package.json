@@ -6,10 +6,24 @@
   "types": "dist/index.d.ts",
   "author": "Robbe Van Petegem <robbe@vanpetegem.me>",
   "license": "MIT",
+  "keywords": [
+    "stimulus",
+    "transitions"
+  ],
+  "homepage": "https://github.com/robbevp/stimulus-transition",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robbevp/stimulus-transition.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robbevp/stimulus-transition/issues"
+  },
+  "private": false,
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "lint": "eslint src -c .eslintrc.js --ext js,jsx,ts --fix"
+    "lint": "eslint src -c .eslintrc.js --ext js,jsx,ts --fix",
+    "prepublish": "tsc"
   },
   "peerDependencies": {
     "stimulus": "^2.0.0"
