@@ -1,7 +1,7 @@
 # Stimulus Transition
 
-Enter/Leave transitions for Stimulus - based on the syntax from Vue and Alpine.
-The controller watches for changes to the `hidden`-attribute to automatically run the transitions.
+Enter/Leave transitions for Stimulus - based on the syntax from Vue and Alpine.  
+The controller watches for changes to computed display style to automatically run the transitions. This could be an added/removed class, a changed is the element's `style`-attribute or the `hidden`-attribute. 
 
 ## Install
 
@@ -32,9 +32,11 @@ Add the `transition` controller to each element you want to transition and add c
 </div>
 ```
 
-The controller watch for changes to the `hidden`-attribute on the exact element. Add, remove or change the attribute to trigger the enter or leave transition.
+The controller watch for changes to the computed display style on the exact element. You can trigger this by changing the classList, the element's style or with the `hidden`-attribute. If the change would cause the element to appear/disappear, the transition will run.
 
-For example another controller might contain:
+During the transition, the effect of your change will be canceled out and be reset afterwards. This controller will not change the display style itself.
+
+All of the below should trigger a transition.
 
 ```javascript
 export default class extends Controller {
@@ -47,8 +49,21 @@ export default class extends Controller {
   hideOptions() {
     this.optionsTarget.hidden = true;
   }
+
+  addClass() {
+    this.optionsTarget.classList.add("hidden")
+  }
+
+  removeClass() {
+    this.optionsTarget.classList.add("hidden")
+  }
+
+  setDisplayNone() {
+    this.optionsTarget.style.setProperty("display", "none")
+  }
 }
 ```
+
 ### Optional classes
 If you don't need one of the classes, you can omit the attributes. The following will just transition on enter:
 ```HTML
