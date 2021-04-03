@@ -8,7 +8,7 @@ The controller watches for changes to the `hidden`-attribute to automatically ru
 Run `yarn add stimulus-transition` to install
 
 Register the controller in your application
-```
+```javascript
 import { Application } from "stimulus"
 import TransitionController from 'stimulus-transition'
 
