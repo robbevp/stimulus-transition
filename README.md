@@ -1,7 +1,7 @@
 # Stimulus Transition
 
 Enter/Leave transitions for Stimulus - based on the syntax from Vue and Alpine.  
-The controller watches for changes to computed display style to automatically run the transitions. This could be an added/removed class, a changed is the element's `style`-attribute or the `hidden`-attribute. 
+The controller watches for changes to computed display style to automatically run the transitions. This could be an added/removed class, a change in the element's `style`-attribute or adding/removing the `hidden`-attribute. 
 
 ## Install
 
