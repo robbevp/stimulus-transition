@@ -1,6 +1,6 @@
 # Stimulus Transition
 
-Enter/Leave transitions for Stimulus - based on the syntax from Vue and Alpine.  
+Enter/Leave transitions for Stimulus - inspired by the syntax from Vue and Alpine.  
 The controller watches for changes to computed display style to automatically run the transitions. This could be an added/removed class, a change in the element's `style`-attribute or adding/removing the `hidden`-attribute. 
 
 ## Install
@@ -116,6 +116,15 @@ This would look something like:
      data-action="transition:end-enter->controller#action">
   <!-- content -->
 </div>
+```
+
+### Note on using `hidden`
+If you use the hidden attribute, you have to make sure that you set the display property correctly for all hidden items.  
+For example:
+```css
+[hidden] {
+  display: none !important
+}
 ```
 
 ## Contributing
