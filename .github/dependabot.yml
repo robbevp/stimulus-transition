@@ -8,20 +8,14 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: weekly
-    day: saturday
-    time: "06:00"
-    timezone: Europe/Brussels
+    interval: monthly
   open-pull-requests-limit: 10
   reviewers:
   - robbevp
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
-    interval: weekly
-    day: saturday
-    time: "06:00"
-    timezone: Europe/Brussels
+    interval: monthly
   open-pull-requests-limit: 10
   reviewers:
   - robbevp
