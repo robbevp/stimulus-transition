@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.4.0
       - name: Set up Node
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.5.0
         with: 
           node-version: 'lts/*'
           cache: 'yarn'
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.4.0
       - name: Set up Node
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.5.0
         with: 
           node-version: 'lts/*'
           cache: 'yarn'
