@@ -28,7 +28,7 @@
     "prepare": "tsc"
   },
   "peerDependencies": {
-    "stimulus": "^3.0.1"
+    "stimulus": "^2.0.0 || ^3.0.0"
   },
   "devDependencies": {
     "stimulus": "^3.0.1",
