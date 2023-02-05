@@ -7,6 +7,15 @@ The controller watches for changes to computed display style to automatically ru
 
 Run `yarn add stimulus-transition` to install
 
+If you are using `@hotwired/stimulus` instead of `stimulus` in your project's `package.json`, you need to add `stimulus add an alias in your dependencies. See [this issue](https://github.com/robbevp/stimulus-transition/issues/104) for details.
+```json
+"dependencies": {
+  ...
+  "stimulus": "npm:@hotwired/stimulus"
+}
+```
+
+
 Register the controller in your application
 ```javascript
 import { Application } from "stimulus"
