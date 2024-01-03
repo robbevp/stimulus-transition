@@ -12,6 +12,13 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - robbevp
+  groups:
+    linting:
+      patterns:
+        - "@typescript-eslint/*"
+        - "eslint"
+        - "eslint-*"
+        - "prettier"
 - package-ecosystem: github-actions
   directory: "/"
   schedule:

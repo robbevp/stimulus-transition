@@ -33,11 +33,11 @@
   "devDependencies": {
     "stimulus": "^3.0.1",
     "typescript": "^5.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.2.1"
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "prettier": "^3.1.1"
   }
 }

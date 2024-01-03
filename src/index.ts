@@ -55,7 +55,7 @@ export default class extends Controller {
         Number(
           getComputedStyle(this.element)
             .transitionDuration.split(",")[0]
-            .replace("s", "")
+            .replace("s", ""),
         ) * 1000;
 
       setTimeout(() => {
